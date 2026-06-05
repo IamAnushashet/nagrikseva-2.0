@@ -1,0 +1,722 @@
+[
+  {
+    "locality": "Mahal",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "totalComplaints": 72,
+    "topIssue": "Garbage not collected",
+    "topIssueCount": 11,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Garbage not collected is trending in Mahal. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Anna Nagar",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 63,
+    "topIssue": "Road pothole",
+    "topIssueCount": 11,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Road pothole is trending in Anna Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Alkapuri",
+    "district": "Vadodara",
+    "state": "Gujarat",
+    "totalComplaints": 63,
+    "topIssue": "Street light not working",
+    "topIssueCount": 11,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Street light not working is trending in Alkapuri. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Aliganj",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 60,
+    "topIssue": "Street light not working",
+    "topIssueCount": 9,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in Aliganj. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Gotri",
+    "district": "Vadodara",
+    "state": "Gujarat",
+    "totalComplaints": 60,
+    "topIssue": "Illegal parking",
+    "topIssueCount": 11,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Illegal parking is trending in Gotri. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Hadapsar",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "totalComplaints": 60,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 14,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Water supply disruption is trending in Hadapsar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Karol Bagh",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "totalComplaints": 60,
+    "topIssue": "Illegal parking",
+    "topIssueCount": 12,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Illegal parking is trending in Karol Bagh. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Jayanagar",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "totalComplaints": 60,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 11,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Tree trimming request is trending in Jayanagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Peelamedu",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalComplaints": 54,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 9,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Tree trimming request is trending in Peelamedu. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Rohini",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "totalComplaints": 54,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Public toilet maintenance is trending in Rohini. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Navrangpura",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "totalComplaints": 54,
+    "topIssue": "Road pothole",
+    "topIssueCount": 11,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Road pothole is trending in Navrangpura. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Maninagar",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "totalComplaints": 54,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Noise complaint is trending in Maninagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Lanka",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 54,
+    "topIssue": "Garbage not collected",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Garbage not collected is trending in Lanka. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Borivali",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "totalComplaints": 51,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Public toilet maintenance is trending in Borivali. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Preet Vihar",
+    "district": "East Delhi",
+    "state": "Delhi",
+    "totalComplaints": 51,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Stray waste dumping is trending in Preet Vihar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Aundh",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "totalComplaints": 51,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 9,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Noise complaint is trending in Aundh. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Manewada",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "totalComplaints": 48,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 9,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Tree trimming request is trending in Manewada. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Andheri East",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "totalComplaints": 48,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Tree trimming request is trending in Andheri East. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Whitefield",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "totalComplaints": 48,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Noise complaint is trending in Whitefield. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "RS Puram",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalComplaints": 48,
+    "topIssue": "Street light not working",
+    "topIssueCount": 6,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in RS Puram. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Nazarbad",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "totalComplaints": 45,
+    "topIssue": "Illegal parking",
+    "topIssueCount": 8,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Illegal parking is trending in Nazarbad. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Hazratganj",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 45,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 8,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Tree trimming request is trending in Hazratganj. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Vijayanagar",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "totalComplaints": 45,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Tree trimming request is trending in Vijayanagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Bhelupur",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 45,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 9,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Noise complaint is trending in Bhelupur. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Anna Nagar",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 45,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Water supply disruption is trending in Anna Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Shahdara",
+    "district": "East Delhi",
+    "state": "Delhi",
+    "totalComplaints": 45,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 7,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Drainage overflow is trending in Shahdara. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Sector 18",
+    "district": "Noida",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 45,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Drainage overflow is trending in Sector 18. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Hebbal",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "totalComplaints": 45,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Noise complaint is trending in Hebbal. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Greater Noida West",
+    "district": "Noida",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 45,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Stray waste dumping is trending in Greater Noida West. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Sigra",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 42,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Drainage overflow is trending in Sigra. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Hubballi",
+    "district": "Dharwad",
+    "state": "Karnataka",
+    "totalComplaints": 42,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Drainage overflow is trending in Hubballi. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Velachery",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 42,
+    "topIssue": "Garbage not collected",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Garbage not collected is trending in Velachery. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "T Nagar",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 42,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Public toilet maintenance is trending in T Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Gandhipuram",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalComplaints": 42,
+    "topIssue": "Garbage not collected",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Garbage not collected is trending in Gandhipuram. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Kothrud",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "totalComplaints": 42,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Water supply disruption is trending in Kothrud. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Lajpat Nagar",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "totalComplaints": 42,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 9,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Tree trimming request is trending in Lajpat Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Indiranagar",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "totalComplaints": 42,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Water supply disruption is trending in Indiranagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Sector 62",
+    "district": "Noida",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 42,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 6,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Drainage overflow is trending in Sector 62. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Manjalpur",
+    "district": "Vadodara",
+    "state": "Gujarat",
+    "totalComplaints": 39,
+    "topIssue": "Street light not working",
+    "topIssueCount": 7,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Street light not working is trending in Manjalpur. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Tallakulam",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 39,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Public toilet maintenance is trending in Tallakulam. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Dwarka",
+    "district": "New Delhi",
+    "state": "Delhi",
+    "totalComplaints": 39,
+    "topIssue": "Street light not working",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in Dwarka. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Kuvempunagar",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "totalComplaints": 39,
+    "topIssue": "Street light not working",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Street light not working is trending in Kuvempunagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Sector 137",
+    "district": "Noida",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 39,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 5,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Drainage overflow is trending in Sector 137. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Mayur Vihar",
+    "district": "East Delhi",
+    "state": "Delhi",
+    "totalComplaints": 39,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Drainage overflow is trending in Mayur Vihar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Saket",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "totalComplaints": 39,
+    "topIssue": "Street light not working",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in Saket. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Navanagar",
+    "district": "Dharwad",
+    "state": "Karnataka",
+    "totalComplaints": 39,
+    "topIssue": "Illegal parking",
+    "topIssueCount": 7,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Illegal parking is trending in Navanagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Fatehgunj",
+    "district": "Vadodara",
+    "state": "Gujarat",
+    "totalComplaints": 39,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 9,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Public toilet maintenance is trending in Fatehgunj. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Laxmi Nagar",
+    "district": "East Delhi",
+    "state": "Delhi",
+    "totalComplaints": 39,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Noise complaint is trending in Laxmi Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Satellite",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "totalComplaints": 39,
+    "topIssue": "Road pothole",
+    "topIssueCount": 8,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Road pothole is trending in Satellite. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Keshwapur",
+    "district": "Dharwad",
+    "state": "Karnataka",
+    "totalComplaints": 36,
+    "topIssue": "Road pothole",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Road pothole is trending in Keshwapur. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Saptapur",
+    "district": "Dharwad",
+    "state": "Karnataka",
+    "totalComplaints": 36,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 8,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Stray waste dumping is trending in Saptapur. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Vesu",
+    "district": "Surat",
+    "state": "Gujarat",
+    "totalComplaints": 36,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 5,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Noise complaint is trending in Vesu. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Kurla",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "totalComplaints": 36,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 5,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Water supply disruption is trending in Kurla. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Mehrauli",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "totalComplaints": 33,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Tree trimming request is trending in Mehrauli. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Cantonment",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 33,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Stray waste dumping is trending in Cantonment. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Katargam",
+    "district": "Surat",
+    "state": "Gujarat",
+    "totalComplaints": 33,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Stray waste dumping is trending in Katargam. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Indira Nagar",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 33,
+    "topIssue": "Street light not working",
+    "topIssueCount": 8,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Street light not working is trending in Indira Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "KK Nagar",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 33,
+    "topIssue": "Street light not working",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in KK Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Simmakkal",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 33,
+    "topIssue": "Road pothole",
+    "topIssueCount": 9,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Road pothole is trending in Simmakkal. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Varachha",
+    "district": "Surat",
+    "state": "Gujarat",
+    "totalComplaints": 30,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 5,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Drainage overflow is trending in Varachha. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Chembur",
+    "district": "Mumbai Suburban",
+    "state": "Maharashtra",
+    "totalComplaints": 30,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 8,
+    "riskSignal": "Normal civic load",
+    "suggestion": "Public toilet maintenance is trending in Chembur. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Hauz Khas",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "totalComplaints": 30,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Water supply disruption is trending in Hauz Khas. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Bopal",
+    "district": "Ahmedabad",
+    "state": "Gujarat",
+    "totalComplaints": 30,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 6,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Stray waste dumping is trending in Bopal. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Saibaba Colony",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalComplaints": 30,
+    "topIssue": "Drainage overflow",
+    "topIssueCount": 4,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Drainage overflow is trending in Saibaba Colony. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Adyar",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "totalComplaints": 30,
+    "topIssue": "Street light not working",
+    "topIssueCount": 7,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Street light not working is trending in Adyar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Kalkaji",
+    "district": "South Delhi",
+    "state": "Delhi",
+    "totalComplaints": 27,
+    "topIssue": "Noise complaint",
+    "topIssueCount": 6,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Noise complaint is trending in Kalkaji. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Dharampeth",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "totalComplaints": 24,
+    "topIssue": "Public toilet maintenance",
+    "topIssueCount": 5,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Public toilet maintenance is trending in Dharampeth. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Yelahanka",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "totalComplaints": 24,
+    "topIssue": "Road pothole",
+    "topIssueCount": 5,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Road pothole is trending in Yelahanka. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Adajan",
+    "district": "Surat",
+    "state": "Gujarat",
+    "totalComplaints": 21,
+    "topIssue": "Stray waste dumping",
+    "topIssueCount": 4,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Stray waste dumping is trending in Adajan. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Shivajinagar",
+    "district": "Pune",
+    "state": "Maharashtra",
+    "totalComplaints": 21,
+    "topIssue": "Garbage not collected",
+    "topIssueCount": 5,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Garbage not collected is trending in Shivajinagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Gomti Nagar",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalComplaints": 18,
+    "topIssue": "Water supply disruption",
+    "topIssueCount": 3,
+    "riskSignal": "High escalation probability",
+    "suggestion": "Water supply disruption is trending in Gomti Nagar. Prioritise ward crew allocation and citizen notifications."
+  },
+  {
+    "locality": "Sitabuldi",
+    "district": "Nagpur",
+    "state": "Maharashtra",
+    "totalComplaints": 18,
+    "topIssue": "Tree trimming request",
+    "topIssueCount": 3,
+    "riskSignal": "Monitor closely",
+    "suggestion": "Tree trimming request is trending in Sitabuldi. Prioritise ward crew allocation and citizen notifications."
+  }
+]

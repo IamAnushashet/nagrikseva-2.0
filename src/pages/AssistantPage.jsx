@@ -1,24 +1,43 @@
 import { Bot, Send, Sparkles, UserRound } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import PageHeader from '../components/PageHeader.jsx';
-import { aiResponses } from '../data/mockData.js';
+import {
+  activeApplications,
+  activeCitizen,
+  activeIdentity,
+  activeLocalitySignals,
+  datasetStats,
+} from '../data/dataset.js';
 
 const quickPrompts = [
   { label: 'How do I apply for a certificate?', key: 'certificate' },
   { label: 'What is my application status?', key: 'status' },
   { label: 'How do I register a complaint?', key: 'complaint' },
-  { label: 'How does login work?', key: 'login' },
+  { label: 'Is my Aadhaar/PAN verified?', key: 'identity' },
+  { label: 'What complaints are trending near me?', key: 'locality' },
+  { label: 'What if a citizen is deceased?', key: 'deceased' },
 ];
 
 export default function AssistantPage() {
+  const responseMap = {
+    certificate:
+      'Open Apply for Service, choose the category, and use DigiLocker-linked Aadhaar/PAN records to pre-fill identity fields. The synthetic dataset includes income, domicile, caste, tax, welfare, and civic services.',
+    status: `${activeApplications[0].id} is currently ${activeApplications[0].status}. The deadline is ${activeApplications[0].deadline}, and the assigned officer is ${activeApplications[0].officer}.`,
+    complaint: `Use the Complaint Portal with locality ${activeCitizen.address.locality}, pincode ${activeCitizen.address.pincode}. The portal suggests categories from ${datasetStats.complaints.toLocaleString('en-IN')} generated complaints.`,
+    identity: `Aadhaar is ${activeIdentity.aadhaar.status}, PAN is ${activeIdentity.pan.status}, and DigiLocker is ${activeIdentity.digilocker.status} for ${activeCitizen.name}.`,
+    locality: `${activeLocalitySignals[0]?.topIssue || 'Civic issues'} is trending near ${activeCitizen.address.district}. Suggested action: ${activeLocalitySignals[0]?.suggestion || 'Route to ward staff.'}`,
+    deceased:
+      'The admin console simulates deceased citizen account deactivation using a mock Civil Registration System flag. Officers can review the account, freeze new applications, and preserve audit history.',
+  };
+
   const initialMessages = useMemo(
     () => [
       {
         from: 'assistant',
-        text: 'Namaste. I can help with service discovery, application status, complaints, and login guidance for this prototype.',
+        text: `Namaste. I can query synthetic records for ${datasetStats.citizens.toLocaleString('en-IN')} citizens, ${datasetStats.applications.toLocaleString('en-IN')} applications, and ${datasetStats.complaints.toLocaleString('en-IN')} complaints.`,
       },
     ],
-    [],
+    [datasetStats.applications, datasetStats.citizens, datasetStats.complaints],
   );
   const [messages, setMessages] = useState(initialMessages);
   const [input, setInput] = useState('');
@@ -26,8 +45,8 @@ export default function AssistantPage() {
   function respond(key, customText) {
     const citizenMessage = customText || quickPrompts.find((prompt) => prompt.key === key)?.label || input;
     const response =
-      aiResponses[key] ||
-      'I can help with certificates, application status, complaints, and login guidance. Try one of the quick actions above.';
+      responseMap[key] ||
+      'I can help with certificates, deadlines, Aadhaar/PAN verification, DigiLocker linking, complaints, locality trends, and account deactivation simulation.';
 
     setMessages((current) => [
       ...current,
@@ -47,8 +66,12 @@ export default function AssistantPage() {
       ? 'status'
       : lowered.includes('complaint')
         ? 'complaint'
-        : lowered.includes('login') || lowered.includes('otp')
-          ? 'login'
+        : lowered.includes('aadhaar') || lowered.includes('pan') || lowered.includes('digilocker')
+          ? 'identity'
+          : lowered.includes('locality') || lowered.includes('near')
+            ? 'locality'
+            : lowered.includes('deceased') || lowered.includes('deactivation')
+              ? 'deceased'
           : lowered.includes('certificate') || lowered.includes('apply')
             ? 'certificate'
             : undefined;

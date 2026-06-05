@@ -1,9 +1,36 @@
 import { CheckCircle2, Circle, Clock3, Download, FileSearch } from 'lucide-react';
 import PageHeader from '../components/PageHeader.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
-import { applications, timeline } from '../data/mockData.js';
+import { activeApplications, activeCitizen } from '../data/dataset.js';
 
-const activeApplication = applications[0];
+const activeApplication = activeApplications[0];
+
+const timeline = [
+  {
+    title: 'Application Submitted',
+    date: activeApplication.submittedOn,
+    description: `${activeCitizen.name} submitted ${activeApplication.service} from ${activeApplication.district}, ${activeApplication.state}.`,
+    state: 'complete',
+  },
+  {
+    title: 'Aadhaar/PAN Pre-check',
+    date: activeApplication.submittedOn,
+    description: 'Synthetic identity records were checked for name, pincode, Aadhaar, PAN, and DigiLocker linkage.',
+    state: 'complete',
+  },
+  {
+    title: activeApplication.status,
+    date: 'Current step',
+    description: `${activeApplication.department} is handling the request. Officer ${activeApplication.officer} is assigned.`,
+    state: activeApplication.status === 'Approved' || activeApplication.status === 'Rejected' ? 'complete' : 'current',
+  },
+  {
+    title: 'Deadline',
+    date: activeApplication.deadline,
+    description: 'Deadline monitoring is simulated from generated application service-level rules.',
+    state: activeApplication.status === 'Approved' ? 'complete' : 'pending',
+  },
+];
 
 export default function TrackPage() {
   return (
@@ -44,8 +71,18 @@ export default function TrackPage() {
               <dd className="mt-1 font-bold text-slate-950">{activeApplication.submittedOn}</dd>
             </div>
             <div>
+              <dt className="text-slate-500">Deadline</dt>
+              <dd className="mt-1 font-bold text-slate-950">{activeApplication.deadline}</dd>
+            </div>
+            <div>
               <dt className="text-slate-500">Officer</dt>
               <dd className="mt-1 font-bold text-slate-950">{activeApplication.officer}</dd>
+            </div>
+            <div>
+              <dt className="text-slate-500">District / Pincode</dt>
+              <dd className="mt-1 font-bold text-slate-950">
+                {activeApplication.district} - {activeApplication.pincode}
+              </dd>
             </div>
             <div>
               <dt className="text-slate-500">Current status</dt>

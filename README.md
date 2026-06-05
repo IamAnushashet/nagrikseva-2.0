@@ -14,3 +14,13 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Synthetic datasets
+
+Generated JSON datasets live in `src/data/generated`.
+
+```bash
+npm run generate:data
+```
+
+The generator creates 1,000 citizens, 5,000 applications, 3,000 complaints, Aadhaar/PAN/DigiLocker records, and locality complaint intelligence.

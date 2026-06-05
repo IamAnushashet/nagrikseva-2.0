@@ -1,11 +1,14 @@
 import { Menu, Search, ShieldCheck, X } from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import LanguageSelector from './LanguageSelector.jsx';
 
 const links = [
   { to: '/', label: 'Services' },
   { to: '/dashboard', label: 'Citizen Dashboard' },
   { to: '/track', label: 'Track' },
+  { to: '/complaints', label: 'Complaints' },
+  { to: '/digilocker', label: 'DigiLocker' },
   { to: '/assistant', label: 'AI Assistant' },
   { to: '/admin', label: 'Admin' },
 ];
@@ -45,6 +48,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-2 lg:flex">
+          <LanguageSelector />
           <button
             className="flex h-10 w-10 items-center justify-center rounded border border-slate-200 text-slate-600 hover:bg-slate-50"
             aria-label="Search services"
@@ -87,6 +91,9 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
+            <div className="px-3 py-2">
+              <LanguageSelector compact />
+            </div>
             <NavLink
               to="/login"
               onClick={() => setOpen(false)}

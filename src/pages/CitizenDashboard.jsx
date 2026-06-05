@@ -1,24 +1,49 @@
-import { Bell, CheckCircle2, ClipboardList, FilePlus2, IdCard, MessageSquareWarning, SearchCheck } from 'lucide-react';
+import {
+  Bell,
+  CalendarClock,
+  ClipboardList,
+  IdCard,
+  Link2,
+  MessageSquareWarning,
+  SearchCheck,
+  ShieldAlert,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
-import { applications, citizenProfile, complaints, serviceCategories } from '../data/mockData.js';
+import {
+  activeApplications,
+  activeCitizen,
+  activeComplaints,
+  activeIdentity,
+  datasetStats,
+} from '../data/dataset.js';
+import { serviceCategories } from '../data/mockData.js';
 
 export default function CitizenDashboard() {
   return (
     <>
       <PageHeader
         eyebrow="Citizen workspace"
-        title={`Welcome, ${citizenProfile.name}`}
-        description="Manage service applications, status updates, complaints, and citizen profile information from one place."
+        title={`Welcome, ${activeCitizen.name}`}
+        description="Manage generated citizen records, identity verification, applications, complaints, and account safety checks."
         actions={
-          <Link
-            to="/assistant"
-            className="inline-flex items-center gap-2 rounded border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 hover:bg-slate-50"
-          >
-            <Bell size={17} aria-hidden="true" />
-            Ask assistant
-          </Link>
+          <>
+            <Link
+              to="/digilocker"
+              className="inline-flex items-center gap-2 rounded bg-civic-700 px-4 py-2 text-sm font-bold text-white hover:bg-civic-900"
+            >
+              <Link2 size={17} aria-hidden="true" />
+              Link DigiLocker
+            </Link>
+            <Link
+              to="/assistant"
+              className="inline-flex items-center gap-2 rounded border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 hover:bg-slate-50"
+            >
+              <Bell size={17} aria-hidden="true" />
+              Ask assistant
+            </Link>
+          </>
         }
       />
       <section className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[320px_1fr] lg:px-8">
@@ -29,24 +54,48 @@ export default function CitizenDashboard() {
                 <IdCard size={28} aria-hidden="true" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-slate-950">{citizenProfile.name}</h2>
-                <p className="mt-1 text-sm text-slate-600">{citizenProfile.citizenId}</p>
-                <span className="mt-3 inline-flex items-center gap-1 rounded bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-700 ring-1 ring-emerald-200">
-                  <CheckCircle2 size={14} aria-hidden="true" />
-                  Verified
-                </span>
+                <h2 className="text-lg font-bold text-slate-950">{activeCitizen.name}</h2>
+                <p className="mt-1 text-sm text-slate-600">{activeCitizen.id}</p>
+                <div className="mt-3">
+                  <StatusBadge status={activeCitizen.accountStatus} />
+                </div>
               </div>
             </div>
             <dl className="mt-5 grid gap-3 text-sm">
               <div className="flex justify-between gap-3 border-t border-slate-100 pt-3">
                 <dt className="text-slate-500">District</dt>
-                <dd className="font-semibold text-slate-900">{citizenProfile.district}</dd>
+                <dd className="font-semibold text-slate-900">{activeCitizen.address.district}</dd>
               </div>
               <div className="flex justify-between gap-3 border-t border-slate-100 pt-3">
                 <dt className="text-slate-500">Mobile</dt>
-                <dd className="font-semibold text-slate-900">{citizenProfile.mobile}</dd>
+                <dd className="font-semibold text-slate-900">{activeCitizen.mobile}</dd>
+              </div>
+              <div className="flex justify-between gap-3 border-t border-slate-100 pt-3">
+                <dt className="text-slate-500">Pincode</dt>
+                <dd className="font-semibold text-slate-900">{activeCitizen.address.pincode}</dd>
               </div>
             </dl>
+          </div>
+
+          <div className="rounded border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 className="flex items-center gap-2 font-bold text-slate-950">
+              <ShieldAlert size={18} className="text-civic-700" aria-hidden="true" />
+              Verification status
+            </h2>
+            <div className="mt-4 grid gap-3 text-sm">
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-slate-600">Aadhaar {activeIdentity.aadhaar.maskedNumber}</span>
+                <StatusBadge status={activeIdentity.aadhaar.status} />
+              </div>
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-slate-600">PAN {activeIdentity.pan.number}</span>
+                <StatusBadge status={activeIdentity.pan.status} />
+              </div>
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-slate-600">DigiLocker</span>
+                <StatusBadge status={activeIdentity.digilocker.status} />
+              </div>
+            </div>
           </div>
 
           <div className="rounded border border-slate-200 bg-white p-5 shadow-sm">
@@ -55,13 +104,15 @@ export default function CitizenDashboard() {
               Recent complaints
             </h2>
             <div className="mt-4 grid gap-3">
-              {complaints.map((complaint) => (
+              {activeComplaints.slice(0, 3).map((complaint) => (
                 <div key={complaint.id} className="rounded bg-slate-50 p-3 text-sm">
                   <div className="flex items-center justify-between gap-3">
                     <p className="font-bold text-slate-950">{complaint.category}</p>
                     <StatusBadge status={complaint.status} />
                   </div>
-                  <p className="mt-1 text-slate-600">{complaint.location}</p>
+                  <p className="mt-1 text-slate-600">
+                    {complaint.locality}, {complaint.district}
+                  </p>
                 </div>
               ))}
             </div>
@@ -71,9 +122,9 @@ export default function CitizenDashboard() {
         <div className="grid gap-6">
           <div className="grid gap-4 md:grid-cols-3">
             {[
-              { title: 'Apply for service', text: 'Start a new government service request.', icon: FilePlus2 },
-              { title: 'Track application status', text: 'View progress, officer actions, and ETA.', icon: SearchCheck },
-              { title: 'Register complaint', text: 'Raise local issues with category and location.', icon: MessageSquareWarning },
+              { title: '1,000 citizens', text: `${datasetStats.identityRecords} identity records available.`, icon: IdCard },
+              { title: '5,000 applications', text: `${activeApplications.length} linked to this profile sample.`, icon: SearchCheck },
+              { title: '3,000 complaints', text: 'Locality intelligence is available for smart routing.', icon: MessageSquareWarning },
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -90,12 +141,14 @@ export default function CitizenDashboard() {
             <div className="flex flex-col gap-3 border-b border-slate-200 p-5 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-lg font-bold text-slate-950">Apply for service</h2>
-                <p className="mt-1 text-sm text-slate-600">Choose from frequently used service categories.</p>
+                <p className="mt-1 text-sm text-slate-600">
+                  Choose from frequently used service categories for {activeCitizen.address.state}.
+                </p>
               </div>
               <select className="rounded border border-slate-300 px-3 py-2 text-sm font-semibold text-slate-700">
-                <option>Pune Urban</option>
-                <option>Nagpur</option>
-                <option>Nashik</option>
+                <option>{activeCitizen.address.district}</option>
+                <option>Bengaluru Urban</option>
+                <option>Chennai</option>
               </select>
             </div>
             <div className="grid gap-3 p-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -122,7 +175,7 @@ export default function CitizenDashboard() {
           <div className="rounded border border-slate-200 bg-white shadow-sm">
             <div className="flex items-center gap-2 border-b border-slate-200 p-5">
               <ClipboardList size={20} className="text-civic-700" aria-hidden="true" />
-              <h2 className="text-lg font-bold text-slate-950">Track application status</h2>
+              <h2 className="text-lg font-bold text-slate-950">Ongoing applications with deadlines</h2>
             </div>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-slate-200 text-sm">
@@ -131,12 +184,13 @@ export default function CitizenDashboard() {
                     <th className="px-5 py-3">Application</th>
                     <th className="px-5 py-3">Department</th>
                     <th className="px-5 py-3">Status</th>
-                    <th className="px-5 py-3">ETA</th>
+                    <th className="px-5 py-3">Deadline</th>
+                    <th className="px-5 py-3">Risk</th>
                     <th className="px-5 py-3">Action</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
-                  {applications.map((application) => (
+                  {activeApplications.map((application) => (
                     <tr key={application.id}>
                       <td className="px-5 py-4">
                         <p className="font-bold text-slate-950">{application.service}</p>
@@ -146,7 +200,15 @@ export default function CitizenDashboard() {
                       <td className="px-5 py-4">
                         <StatusBadge status={application.status} />
                       </td>
-                      <td className="px-5 py-4 text-slate-600">{application.eta}</td>
+                      <td className="px-5 py-4 text-slate-600">
+                        <span className="inline-flex items-center gap-1">
+                          <CalendarClock size={15} aria-hidden="true" />
+                          {application.deadline}
+                        </span>
+                      </td>
+                      <td className="px-5 py-4">
+                        <StatusBadge status={application.riskLevel} />
+                      </td>
                       <td className="px-5 py-4">
                         <Link to="/track" className="font-bold text-civic-700">
                           View timeline
