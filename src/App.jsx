@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout.jsx';
+import AccessibilitySettings from './pages/AccessibilitySettings.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import AssistantPage from './pages/AssistantPage.jsx';
 import CitizenDashboard from './pages/CitizenDashboard.jsx';
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/digilocker" element={<DigiLockerPage />} />
         <Route path="/assistant" element={<AssistantPage />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/accessibility" element={<AccessibilitySettings />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

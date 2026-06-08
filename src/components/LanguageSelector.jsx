@@ -1,15 +1,8 @@
 import { Languages } from 'lucide-react';
-import { useState } from 'react';
-
-const languageOptions = [
-  { code: 'en', label: 'English' },
-  { code: 'hi', label: 'Hindi' },
-  { code: 'kn', label: 'Kannada' },
-  { code: 'ta', label: 'Tamil' },
-];
+import { useApp } from '../context/AppContext.jsx';
 
 export default function LanguageSelector({ compact = false }) {
-  const [language, setLanguage] = useState('en');
+  const { language, setLanguage, languageOptions } = useApp();
 
   return (
     <label className={`flex items-center gap-2 ${compact ? 'w-full' : ''}`}>

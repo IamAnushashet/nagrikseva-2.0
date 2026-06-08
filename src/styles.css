@@ -16,6 +16,11 @@ body {
   min-width: 320px;
 }
 
+*:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}
+
 button,
 input,
 select,
@@ -32,4 +37,45 @@ textarea {
     linear-gradient(rgba(15, 118, 110, 0.07) 1px, transparent 1px),
     linear-gradient(90deg, rgba(15, 118, 110, 0.07) 1px, transparent 1px);
   background-size: 28px 28px;
+}
+
+.large-text {
+  font-size: 112.5%;
+}
+
+.high-contrast body,
+.high-contrast .bg-slate-50,
+.high-contrast .bg-white {
+  background: #050505 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-slate-950,
+.high-contrast .text-slate-900,
+.high-contrast .text-slate-800,
+.high-contrast .text-slate-700,
+.high-contrast .text-slate-600,
+.high-contrast .text-slate-500 {
+  color: #ffffff !important;
+}
+
+.high-contrast .border-slate-200,
+.high-contrast .border-slate-300 {
+  border-color: #facc15 !important;
+}
+
+.high-contrast .bg-civic-700,
+.high-contrast .bg-civic-600 {
+  background: #facc15 !important;
+  color: #000000 !important;
+}
+
+.color-blind .bg-civic-600,
+.color-blind .bg-civic-700 {
+  background: #2563eb !important;
+}
+
+.simple-navigation main a,
+.simple-navigation main button {
+  min-height: 48px;
 }
